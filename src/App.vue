@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <van-image height="10rem" width="10rem" round src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image>
+    <van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
+      <template v-slot:loading>
+        <van-loading type="spinner" size="20"></van-loading>
+      </template>
+    </van-image>
   </div>
 </template>
 
