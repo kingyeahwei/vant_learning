@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <van-button square type="primary">方形按钮</van-button>
-    <van-button round type="info">圆形按钮</van-button>
+    <van-button icon="star-o" type="primary"></van-button>
+    <van-button icon="star-o" type="primary">按钮</van-button>
+    <van-button icon="https://img.yzcdn.cn/vant/logo.png" type="info">按钮</van-button>
   </div>
 </template>
 
