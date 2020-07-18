@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <van-button plain hairline type="primary">细边框按钮</van-button>
-    <van-button plain hairline type="info">细边框按钮</van-button>
+    <van-button disabled type="primary">禁用状态</van-button>
+    <van-button disabled type="info">禁用状态</van-button>
   </div>
 </template>
 
