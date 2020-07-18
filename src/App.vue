@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <van-button color="#7232dd">单色按钮</van-button>
-    <van-button color="#7232dd" plain>单色按钮</van-button>
-    <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">渐变色按钮</van-button>
+    <div style="height: 10px"></div>
+    <van-cell-group>
+      <van-cell title="单元格" value="内容"></van-cell>
+      <van-cell title="单元格" value="内容" label="描述信息"></van-cell>
+    </van-cell-group>
   </div>
 </template>
 
