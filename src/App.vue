@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <div style="height: 10px"></div>
-    <van-icon name="chat-o" size="40"></van-icon>
-    <van-icon name="chat-o" size="3rem"></van-icon>
+    <van-image height="100" width="100" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image>
   </div>
 </template>
 
