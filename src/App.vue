@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div style="height: 10px"></div>
-    <van-icon name="chat-o"></van-icon>
-    <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png"></van-icon>
+    <van-icon name="chat-o" dot></van-icon>
+    <van-icon name="chat-o" badge="9"></van-icon>
+    <van-icon name="chat-o" badge="99+"></van-icon>
   </div>
 </template>
 
