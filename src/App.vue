@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
-      <template v-slot:loading>
-        <van-loading type="spinner" size="20"></van-loading>
-      </template>
+      <template v-slot:error>加载失败</template>
     </van-image>
   </div>
 </template>
