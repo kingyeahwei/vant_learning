@@ -4,6 +4,8 @@
     <van-icon name="chat-o" dot></van-icon>
     <van-icon name="chat-o" badge="9"></van-icon>
     <van-icon name="chat-o" badge="99+"></van-icon>
+    <van-icon name="chat-o" color="#1989fa"></van-icon>
+    <van-icon name="chat-o" color="#07c160"></van-icon>
   </div>
 </template>
 
