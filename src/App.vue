@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <van-button plain type="primary">朴素按钮</van-button>
-    <van-button plain type="info">朴素按钮</van-button>
+    <van-button plain hairline type="primary">细边框按钮</van-button>
+    <van-button plain hairline type="info">细边框按钮</van-button>
   </div>
 </template>
 
