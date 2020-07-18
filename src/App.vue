@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <van-button loading type="primary"></van-button>
-    <van-button loading type="primary" loading-type="spinner"></van-button>
-    <van-button loading type="info" loading-text="加载中..."></van-button>
+    <van-button square type="primary">方形按钮</van-button>
+    <van-button round type="info">圆形按钮</van-button>
   </div>
 </template>
 
