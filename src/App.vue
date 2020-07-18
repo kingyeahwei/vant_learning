@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div style="height: 10px"></div>
-    <van-cell center title="单元格" value="内容" label="描述信息"></van-cell>
+    <van-icon name="chat-o"></van-icon>
+    <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png"></van-icon>
   </div>
 </template>
 
