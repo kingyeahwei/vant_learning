@@ -10,14 +10,19 @@
     <!--  :style="{ height: '30%' }"-->
     <!--/>-->
 
-    <van-popup
-      v-model="show"
-      closeable
-      close-icon-position="top-left"
-      position="bottom"
-      round
-      :style="{height: '30%'}"
-    ></van-popup>
+    <!--<van-popup-->
+    <!--  v-model="show"-->
+    <!--  closeable-->
+    <!--  close-icon-position="top-left"-->
+    <!--  position="bottom"-->
+    <!--  round-->
+    <!--  :style="{height: '30%'}"-->
+    <!--&gt;</van-popup>-->
+    <div class=""></div>
+
+    <van-popup v-model="show" get-container="#app" >
+      <div style="height: 100px; width: 100px; border: 1px solid red;"></div>
+    </van-popup>
   </div>
 </template>
 
