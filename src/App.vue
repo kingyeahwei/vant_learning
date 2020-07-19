@@ -1,32 +1,11 @@
 <template>
   <div id="app">
-    <van-button @click="showPopup">弹出</van-button>
-    <!--<van-popup v-model="show" closeable position="bottom" :style="{height: '60%'}"></van-popup>-->
-    <!--<van-popup-->
-    <!--  v-model="show"-->
-    <!--  closeable-->
-    <!--  close-icon="close"-->
-    <!--  position="bottom"-->
-    <!--  :style="{ height: '30%' }"-->
-    <!--/>-->
-
-    <!--<van-popup-->
-    <!--  v-model="show"-->
-    <!--  closeable-->
-    <!--  close-icon-position="top-left"-->
-    <!--  position="bottom"-->
-    <!--  round-->
-    <!--  :style="{height: '30%'}"-->
-    <!--&gt;</van-popup>-->
-    <div class=""></div>
-
-    <van-popup v-model="show" get-container="#app" >
-      <div style="height: 100px; width: 100px; border: 1px solid red;"></div>
-    </van-popup>
+    <van-button @click="handleClick">打开toast</van-button>
   </div>
 </template>
 
 <script>
+  import {Toast} from "vant"
   export default {
     name: 'App',
     data() {
@@ -35,8 +14,8 @@
       }
     },
     methods: {
-      showPopup() {
-        this.show = true;
+      handleClick() {
+        Toast("提示内容")
       }
     }
   }
