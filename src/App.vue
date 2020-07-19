@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <van-button @click="handleClick">打开toast</van-button>
+    <van-cell title="选择多个日期" :value="text" @click="show = true"></van-cell>
+    <van-calendar v-model="show" type="multiple" @confirm="onConfirm"></van-calendar>
   </div>
 </template>
 
@@ -10,19 +11,14 @@
     name: 'App',
     data() {
       return {
-        show: false,
-        toast: null
+        text: "",
+        show: false
       }
     },
     methods: {
-      handleClick() {
-        Toast.allowMultiple();
-        const toast1 = Toast("第一个 Toast");
-        const toast2 = Toast.success("第二个 Toast");
-        setTimeout(() => {
-          toast1.clear()
-          toast2.clear()
-        }, 3000)
+      onConfirm(date) {
+        this.show = false;
+        this.text = `选择了${date.length}个日期`;
       }
     }
   }
