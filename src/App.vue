@@ -15,11 +15,8 @@
     },
     methods: {
       handleClick() {
-        Toast.loading({
-          message: "加载中...",
-          // forbidClick: true,
-          loadingType: "spinner"
-        })
+        // Toast.success("成功文案");
+        Toast.fail("失败文案");
       }
     }
   }
