@@ -10,19 +10,27 @@
     name: 'App',
     data() {
       return {
-        show: false
+        show: false,
+        toast: null
       }
     },
     methods: {
       handleClick() {
-        // Toast({
-        //   message: "自定义图标",
-        //   icon: "like-o"
-        // })
-        Toast({
-          message: "展示图片",
-          icon: "https://img.yzcdn.cn/vant/logo.png"
+        const toast = Toast.loading({
+          duration: 3000,
+          forbidClick: true,
+          message: "倒计时3秒"
         })
+        let second = 3;
+        const timer = setInterval(() => {
+          second--;
+          if (second) {
+            toast.message = `倒计时${second} 秒`
+          } else {
+            clearInterval(timer);
+            Toast.clear()
+          }
+        }, 1000)
       }
     }
   }
