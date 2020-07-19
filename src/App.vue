@@ -1,14 +1,23 @@
 <template>
   <div id="app">
-    <van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
-      <template v-slot:error>加载失败</template>
-    </van-image>
+    <van-cell is-link @click="showPopup">展示弹出层</van-cell>
+    <van-popup v-model="show">内容</van-popup>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'App'
+    name: 'App',
+    data() {
+      return {
+        show: false
+      }
+    },
+    methods: {
+      showPopup() {
+        this.show = true;
+      }
+    }
   }
 </script>
 
