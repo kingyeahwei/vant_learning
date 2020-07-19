@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <van-cell title="选择多个日期" :value="text" @click="show = true"></van-cell>
-    <van-calendar v-model="show" type="multiple" @confirm="onConfirm"></van-calendar>
+    <van-cell title="选择日期区间" :value="date" @click="show = true"></van-cell>
+    <van-calendar v-model="show" type="range" @confirm="onConfirm"></van-calendar>
   </div>
 </template>
 
@@ -11,14 +11,18 @@
     name: 'App',
     data() {
       return {
-        text: "",
+        date: "",
         show: false
       }
     },
     methods: {
+      formatDate(date) {
+        return `${date.getMonth() + 1}/${date.getDate()}`
+      },
       onConfirm(date) {
+        const [start, end] = date;
         this.show = false;
-        this.text = `选择了${date.length}个日期`;
+        this.date = `${this.formatDate(start)} - ${this.formatDate(end)}`;
       }
     }
   }
