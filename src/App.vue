@@ -15,7 +15,11 @@
     },
     methods: {
       handleClick() {
-        Toast("提示内容")
+        Toast.loading({
+          message: "加载中...",
+          // forbidClick: true,
+          loadingType: "spinner"
+        })
       }
     }
   }
