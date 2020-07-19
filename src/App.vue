@@ -15,6 +15,7 @@
       closeable
       close-icon-position="top-left"
       position="bottom"
+      round
       :style="{height: '30%'}"
     ></van-popup>
   </div>
