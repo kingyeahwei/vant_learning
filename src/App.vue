@@ -16,7 +16,13 @@
     },
     methods: {
       handleClick() {
-        this.$toast("提示文案")
+        Toast.allowMultiple();
+        const toast1 = Toast("第一个 Toast");
+        const toast2 = Toast.success("第二个 Toast");
+        setTimeout(() => {
+          toast1.clear()
+          toast2.clear()
+        }, 3000)
       }
     }
   }
