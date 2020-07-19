@@ -15,8 +15,14 @@
     },
     methods: {
       handleClick() {
-        // Toast.success("成功文案");
-        Toast.fail("失败文案");
+        // Toast({
+        //   message: "自定义图标",
+        //   icon: "like-o"
+        // })
+        Toast({
+          message: "展示图片",
+          icon: "https://img.yzcdn.cn/vant/logo.png"
+        })
       }
     }
   }
