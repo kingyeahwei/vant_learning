@@ -1,7 +1,14 @@
 <template>
   <div id="app">
-    <van-cell is-link @click="showPopup">展示弹出层</van-cell>
-    <van-popup v-model="show" position="right">内容</van-popup>
+    <van-button @click="showPopup">弹出</van-button>
+    <!--<van-popup v-model="show" closeable position="bottom" :style="{height: '60%'}"></van-popup>-->
+    <van-popup
+      v-model="show"
+      closeable
+      close-icon="close"
+      position="bottom"
+      :style="{ height: '30%' }"
+    />
   </div>
 </template>
 
