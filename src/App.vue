@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <van-cell is-link @click="showPopup">展示弹出层</van-cell>
-    <van-popup v-model="show">内容</van-popup>
+    <van-popup v-model="show" position="right">内容</van-popup>
   </div>
 </template>
 
